@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://images.blocksurvey.io/templates/association-registration-form.png') no-repeat center center fixed; /* Replace 'background.jpg' with your image path */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-section {
+    flex: 1;
+    padding: 20px;
+    background: rgba(255, 182, 193, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    position: absolute;
+    top: 20px; /* Adjust to move the headline */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: green; /* Add button styled in green */
+}
+
+button[type="submit"]:hover {
+    background-color: darkgreen; /* Darker green on hover */
+}
+
+
+.table-section {
+    flex: 1;
+    padding: 20px;
+    background: rgba(173, 216, 230, 0.5);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #f4f4f4;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+td button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+td .reset-btn {
+    background-color: orange;
+}
+
+td .delete-btn {
+    background-color: red;
+}
+
+td button:hover {
+    opacity: 0.8;
+}
